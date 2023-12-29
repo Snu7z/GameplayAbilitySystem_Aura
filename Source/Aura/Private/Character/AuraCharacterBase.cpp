@@ -16,7 +16,7 @@ AAuraCharacterBase::AAuraCharacterBase()
 	Weapon = CreateDefaultSubobject<USkeletalMeshComponent>("Weapon");
 	//The weapon will be attached to the socket WeaponHandSocket
 	Weapon->SetupAttachment(GetMesh(), FName("WeaponHandSocket"));
-	Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision); 
 }
 
 // Called when the game starts or when spawned
